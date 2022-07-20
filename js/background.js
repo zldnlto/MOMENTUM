@@ -7,6 +7,6 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
 bgImage.src = `img/${chosenImage}`;
-
+bgImage.className = `bg-img`; 
 document.body.appendChild(bgImage); //body에 html을 추가
 

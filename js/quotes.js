@@ -24,9 +24,15 @@ const quotes = [
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
+author.classList.add(HIDDEN_CLASSNAME);
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
 
+function onMouseQuote(event) {
+    author.classList.toggle(HIDDEN_CLASSNAME);
+}
+
+quote.addEventListener("mouseover", onMouseQuote);

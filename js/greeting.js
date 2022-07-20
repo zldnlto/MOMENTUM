@@ -2,6 +2,7 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input"); 
 const loginButton = document.querySelector("#login-form button");
 const greeting = document.querySelector("#greeting");
+const greetingWrap = document.querySelector(".greeting-wrap")
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -16,8 +17,9 @@ function onLoginSubmit(event) { //username의 유효성 검사하기
 
 function paintGreetings(){
     const username = localStorage.getItem(USERNAME_KEY); 
-    greeting.innerText = `Hello ${username}!`;
+    greeting.innerText = `Hello, ${username}!`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    greetingWrap.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);

@@ -55,3 +55,25 @@ Math.floor() 를 통해서 소수점 제거, 배열 인덱스를 추출하기.
 parsedToDos.forEach(paintToDo); 에서 배열 각각에 대해 적용할 함수를 paintToDo()로 기입한 것이 원인, paintToDo()는 함수가 리턴하는 '값'을 넘겨주는 꼴이므로 에러엔딩.. 제법 눈에도 안 밟혀서 오래 쳐다봤다. forEach에는 정신 차리고 함수값 말고 함수를 넘겨주자!
 
 ### :bookmark: Chp.8.0 WEATHER
+
+- navigator.geolocation.getCurrentPosition() 함수를 통해 현재 유저의 위치 정보 얻는다. (Success 함수와 error 함수 필요)
+- 받아온 위도/경도 정보를 통해 장소명으로 바꿔줌 (API 이용)
+- Fetch()를 통해 API 리소스를 가져옴 / 크롬 network 탭에서 확인 / fetch는 promise
+
+:exclamation: API, Fetch 공부 더 해보기
+
+---
+
+여기까지 강의 기능 구현 완료
+깃도 익히면서 진행했는데 다음 레포지토리 생성 때에는 *버전을 생성*한다는 본질적인 기능에 집중해서, _커밋 메세지 깔끔하게 통일감 주면서_ 하면 더 보기 좋을듯 싶다.
+
+### :love_letter: 업데이트
+
+- 7.20 css 러프하게
+- css 레이아웃, 폰트 적용,
+- Quotes text 에 hover 시 author 활성화 기능
+
+#### :thought_balloon: idea
+
+- transition 이용해 사용감 개선하기
+- (삭제와는 별개의) done list 만들기

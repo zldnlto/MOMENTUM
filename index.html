@@ -5,31 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    />
     <title>Momemtum App</title>
   </head>
   <body>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="what is your name?"
-      />
-      <button>Log In</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 class="hidden" id="greeting"></h1>
-    <form id="todo-form" action="">
-      <input type="text" placeholder="Write a To Do and Press enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div class="container">
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <h2 id="clock">00:00:00</h2>
+      <form class="hidden" id="login-form">
+        <input
+          class="input"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="what is your name?"
+        />
+        <button class="btn-login">Log In</button>
+      </form>
+      <div class="greeting-wrap hidden">
+        <div class="greeting-box">
+          <h1 class="hidden" id="greeting"></h1>
+        </div>
+        <form id="todo-form" action="">
+          <input
+            class="input"
+            type="text"
+            placeholder="Write a To Do and enter!"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <div id="quote">
+        <span class="quotetxt"></span><br />
+        <span class="author"></span>
+      </div>
     </div>
     <script src="./js/greeting.js"></script>
     <script src="./js/clock.js"></script>
